@@ -1,25 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-<link rel="stylesheet" href="./css/streamsource.css">
-<link rel="stylesheet" href="./css/default.css">
-<title>StreamSource.org</title>
+   <title>StreamSource.org</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<!-- NavBar -->
-<ul class="nav">
-   <li class="title">StreamSource.org</li>
-   <li class="nav-item"><a href="index.php">Home</a></li>
-</ul>
-<div id="seperator"></div>
-
-<!-- Content -->
-<div id="container">
-   <div id="center" style="padding-top:30px;">
-       hello@streamsource.org
+   <div class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl font-bold">
+         StreamSource.org
+      </h1>
    </div>
-</div>
+   <div class="p-4">
+      <h2 class="text-2xl font-bold">
+         What is StreamSource.org?
+      </h2>
+      <p>
+         Random projects designed to distribute obscure utilities for use in - primarily - the cable company industry.
+      </p>
+   </div>
+   <div class="p-4">
+      <h2 class="text-2xl font-bold">
+         AutoBk
+      </h2>
+      <p class="p-2">
+         AutoBk is a utility designed to automate the backup process of various video processing devices used by cable companies across the world. The various vendors (Motorola/Arris/Commscope, Harmonic, Cisco/Synamedia) charge for their solution, and generally it isn't very good. AutoBk is designed to be a free, open-source alternative to these solutions.
+      </p>
+      <h3 class="ml-2 p-2 text-xl font-bold"><a class="text-blue-500 hover:text-blue-700" href="https://github.com/ds2600/autobk-p">AutoBk-P</a></h3>
+      <div class="p-2 ml-4">
+         <p>AutoBk-P is the heart of the AutoBk system and the one that does the actual work. It's a Python script that runs 24/7 and runs backups of a slew of devices, currently:</p>
+         <p>
+            <ul class="list-disc list-inside ml-6">
+               <li>Arris APEX-1000 (manual routes only)</li>
+               <li>Arris CAP-1000</li>
+               <li>WISI Inca 4440</li>
+               <li>Sonifex PSSend</li>
+               <li>Arris Quartet</li>
+               <li>Vecima TC600E</li>
+               <li>Vecima CableVista</li>
+               <li>Cisco/Synamedia DCM 9902</li>
+               <li>Monroe OneNet/DASDAC EAS</li>
+            </ul>
+         </p>
+      </div>
+      <h3 class="ml-2 p-2 text-xl font-bold"><a class="text-blue-500 hover:text-blue-700" href="https://github.com/ds2600/autobk-controller">AutoBk Controller</a></h3>
+      <div class="p-2 ml-4">
+         <p><i>Currently Under Development</i></p>
+         <p>AutoBk Controller is a web based GUI for easy maintenance and operations of AutoBk. </p>
+      </div>
+      <h3 class="ml-2 p-2 text-xl font-bold text-blue-500">AutoBk GUI</h3>
+      <div class="p-2 ml-4">
+         <p><i>Deprecated</i></p>
+         <p>AutoBk GUI is the original web GUI for AutoBk. It is highly unoptimized and requires extremely manual installation. For more info, reach out. </p>
+      </div>
+   </div>
 </body>
 </html>
-
